@@ -7,7 +7,6 @@ android {
     compileSdkVersion 33
     buildToolsVersion '27.0.3'
     defaultConfig {
-        applicationId "com.example.testedoctorsdk"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
