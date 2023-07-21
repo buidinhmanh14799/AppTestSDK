@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         myBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Option option = new Option(true, "Manh", com.example.testedoctorsdk.R.drawable.baseline_arrow_back_ios_24);
+                Option option = new Option(true, "Manh", R.drawable.baseline_arrow_back_24);
                 TestEdoctorSDK.openWebView(MainActivity.this, option);
             }
         });
