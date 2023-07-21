@@ -2,16 +2,6 @@ plugins {
     id 'com.android.application'
 }
 
-group 'com.github.buidinhmanh14799' // Thay 'username' bằng tên người dùng GitHub hoặc tên tổ chức GitHub
-version '1.0.0' // Thay '1.0.0' bằng phiên bản của thư viện
-
-
-repositories {
-    mavenCentral()
-    jcenter()
-}
-
-
 android {
     namespace 'com.example.apptestsdk'
     compileSdk 33
@@ -47,29 +37,4 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-}
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-
-            groupId = 'com.github.buidinhmanh14799' // Thay 'username' bằng tên người dùng GitHub hoặc tên tổ chức GitHub
-            artifactId = 'TestEdoctorSDK' // Thay 'library-name' bằng tên của thư viện
-            version = '1.0.0' // Thay '1.0.0' bằng phiên bản của thư viện
-
-            pom {
-                name = 'TestEdoctorSDK' // Thay 'Library Name' bằng tên của thư viện
-                description = 'Description of your library' // Thay 'Description of your library' bằng mô tả của thư viện
-                url = 'https://github.com/buidinhmanh14799/AppTestSDK' // Thay 'username' và 'repository' bằng tên người dùng GitHub và tên kho lưu trữ
-
-                licenses {
-                    license {
-                        name = 'The Apache License, Version 2.0'
-                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    }
-                }
-            }
-        }
-    }
 }
